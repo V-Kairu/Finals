@@ -1,0 +1,426 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #000;
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid #f39c12; /* Gold border at the bottom */
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+/* Navbar Links */
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover Effect */
+.nav-links a:hover {
+    background-color: #f39c12; /* Gold on hover */
+}
+
+/* Active Link Styling */
+.nav-links a.active {
+    background-color: #f39c12; /* Gold when active */
+    font-weight: bold; /* Optional: Make active link bold */
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1a1a1a; /* Dark background for dropdown */
+    min-width: 150px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border-radius: 5px;
+    border: 1px solid #f39c12; /* Gold border */
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #333; /* Optional: Separator between links */
+}
+
+.dropdown-content a:hover {
+    background-color: #f39c12; /* Gold hover effect for dropdown links */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Header */
+header {
+    background-color: #000; /* Black background */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    margin: 10px 0 0;
+    font-size: 2rem;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Article Section */
+.article {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #1a1a1a; /* Dark background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.article h2,
+.article h3 {
+    color: #f39c12; /* Gold headings */
+}
+
+.article p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+/* Updated Image Styles */
+.article img {
+    width: 100%; /* Always span the full width of the parent container */
+    max-height: 400px; /* Limit maximum height */
+    object-fit: contain; /* Ensure the image scales proportionally */
+    border: 2px solid #f39c12; /* Gold border */
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+/* Homepage Image Gallery */
+.image-gallery {
+    text-align: center; /* Center the text inside */
+}
+
+.image-gallery .gallery-container {
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    gap: 20px; /* Add some space between items */
+    flex-wrap: wrap; /* Allow the items to wrap on smaller screens */
+}
+
+.image-gallery .gallery-container .image-item {
+    text-align: center; /* Center the image and caption */
+    flex: 1 1 200px; /* Allow the items to grow and shrink, with a base width of 200px */
+    max-width: 300px; /* Limit the maximum width */
+}
+
+.image-gallery .gallery-container .image-item img {
+    width: 100%; /* Ensure the image takes the full width of the container */
+    max-width: 300px; /* Set consistent maximum width */
+    height: 200px; /* Set consistent height */
+    object-fit: cover; /* Crop images to fit without distortion */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    border: 2px solid #f39c12; /* Optional: Add a border for styling */
+}
+
+/* Separator */
+.separator {
+    border-top: 2px solid #f39c12; /* Gold separator */
+    margin: 20px 0;
+}
+
+/* Login Form */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: #000; /* Black background */
+    padding: 20px;
+}
+
+.login-form {
+    background: #1a1a1a; /* Dark background */
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    color: #f39c12; /* Gold color for the title */
+}
+
+.login-form .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #f39c12;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.login-form input::placeholder {
+    color: #ccc;
+}
+
+.login-form .btn {
+    background-color: #f39c12;
+    color: #000;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form .btn:hover {
+    background-color: #e67e22; /* Darker gold on hover */
+}
+
+.signup-link {
+    margin-top: 10px;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.signup-link a {
+    color: #f39c12;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #000; /* Black background */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #f39c12; /* Gold border at the top */
+}
+
+.footer-logo img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    margin: 10px 0;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #f39c12; /* Gold on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    header p {
+        font-size: 1rem;
+    }
+
+    .article {
+        padding: 15px;
+    }
+
+    .article img {
+        max-height: 300px; /* Adjust image size for tablets */
+    }
+
+    .logo {
+        max-width: 120px; /* Smaller logo size for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    .article img {
+        max-height: 250px; /* Adjust image size for mobile */
+    }
+
+    .logo {
+        max-width: 100px; /* Smaller logo size for mobile */
+    }
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    gap: 20px;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 300px; /* Limit image size */
+    border-radius: 10px; /* Optional: Rounded corners */
+    border: 2px solid #f39c12; /* Optional: Gold border */
+}
+
+.about-text {
+    flex: 1; /* Let text take the remaining space */
+}
+
+.about-text h2 {
+    color: #f39c12; /* Gold color for heading */
+    margin-bottom: 10px;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.contact-form {
+    background: #1a1a1a;
+    color: #fff;
+    padding: 40px 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f39c12; /* Gold color */
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: calc(100% - 20px); /* Adjust width to prevent overflow */
+    padding: 10px;
+    border: 1px solid #f39c12;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #ccc;
+}
+
+.contact-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #f39c12;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #e67e22;
+}
